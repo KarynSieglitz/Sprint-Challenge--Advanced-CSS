@@ -1,1 +1,32 @@
 // Mixins Here
+
+.column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-reverse() {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.signUp(@background: @btn-bg-color, @width: 100px, @text: white){
+    display: block;
+    background-color: @background;
+    width: @width;
+    height: 35px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    color:@text;
+    cursor: pointer;
+    border-style: none;
+    text-align: center;
+    padding-top: 9px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: @text;
+        color: @background;
+    }
+}

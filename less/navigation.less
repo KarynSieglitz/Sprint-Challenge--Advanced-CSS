@@ -1,1 +1,36 @@
 // Navigation code here
+
+.navContainer {
+    .column();
+    padding-top: 15px;
+    background-color: @nav-transparent;
+    border-bottom: 1px solid @nav-border;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        a {
+            font-size: 1.6rem;
+            font-weight: bolder;
+            text-decoration: none;
+            padding: 20px 15px 11px 15px;
+            color: @river-bend;
+            text-align: center;
+            transition: all .2s ease;
+
+            &:hover {
+                color: @nav-hover;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
