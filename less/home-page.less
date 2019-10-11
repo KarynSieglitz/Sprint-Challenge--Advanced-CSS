@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  margin-top: 103px;
 
   .intro {
 
@@ -88,7 +89,18 @@
       }
 
       .btn {
-        .signUp;
+        .signUp();
+        transition: all .2s ease;
+
+        &:hover {
+          transform: scale(1.5);
+
+          @media @phone {
+            &:hover {
+              transform: scaleY(1.2);
+            }
+          }
+        }
 
         @media @phone {
           width: 100%;
